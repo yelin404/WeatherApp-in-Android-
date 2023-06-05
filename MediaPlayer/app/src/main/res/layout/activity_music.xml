@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Music.MusicActivity"
+    android:orientation="vertical"
+    android:background="@drawable/music_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/search_background">
+
+        <ImageView
+            android:id="@+id/exit_Iv"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_exit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在播放"
+            android:textStyle="bold"
+            android:textColor="#FF00BFFF"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/music_Iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/song"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="光年之外"
+        android:textStyle="bold"
+        android:textColor="#FF008B8B"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/progress_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/total_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/play_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/btn_continue_play"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/pause_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/pause"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+
+
+        <Button
+            android:id="@+id/pre_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/play_btn"
+            android:background="@drawable/pre" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/next"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/play_btn"
+            android:layout_marginLeft="30dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
